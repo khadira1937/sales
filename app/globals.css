@@ -60,8 +60,14 @@ body {
   overflow-x: hidden;
 }
 
-p {
-  font-family: var(--font-paragraph);
+p,
+.hero-subtitle,
+.pricing-subtitle,
+.seo-content p,
+.faq-answer p,
+.hero-guarantees p,
+.footer-bottom p {
+  font-family: var(--font-paragraph) !important;
 }
 
 img {
