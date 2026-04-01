@@ -1,5 +1,4 @@
 import { DM_Sans, Libre_Baskerville, Roboto } from 'next/font/google';
-import Script from 'next/script';
 
 import './globals.css';
 
@@ -199,7 +198,6 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${dmSans.variable} ${libreBaskerville.variable} ${roboto.variable}`}>
         {children}
-        <Script src="/script.js" strategy="afterInteractive" />
       </body>
     </html>
   );

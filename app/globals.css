@@ -65,14 +65,13 @@ body {
   font-family: var(--font-body);
 }
 
-p,
-.hero-subtitle,
-.pricing-subtitle,
-.seo-content p,
-.faq-answer p,
-.hero-guarantees p,
-.footer-bottom p {
+main :is(p, li, td, button),
+main :is(.pricing-subtitle, .plan-btn, .btn-primary, .btn-outline-white),
+footer p,
+.scroll-to-top {
   font-family: var(--font-paragraph) !important;
+  font-style: normal;
+  letter-spacing: normal;
 }
 
 img {
