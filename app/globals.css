@@ -50,7 +50,7 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-paragraph);
   color: var(--paper-dark);
   background:
     radial-gradient(1000px 520px at 10% 0%, rgba(192, 21, 42, 0.12), transparent 58%),
@@ -58,6 +58,11 @@ body {
     linear-gradient(180deg, #080808, var(--ink));
   line-height: 1.7;
   overflow-x: hidden;
+}
+
+.site-header,
+.mobile-menu {
+  font-family: var(--font-body);
 }
 
 p,
@@ -795,7 +800,7 @@ button {
   margin-top: 12px;
   text-align: center;
   color: var(--muted-2);
-  font-family: var(--font-body);
+  font-family: var(--font-paragraph);
   font-size: clamp(16px, 1.05vw, 18px);
   font-weight: 500;
   font-style: normal;
