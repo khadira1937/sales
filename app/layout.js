@@ -1,4 +1,4 @@
-import { DM_Sans, Inter, Libre_Baskerville } from 'next/font/google';
+import { DM_Sans, Libre_Baskerville, Roboto } from 'next/font/google';
 import Script from 'next/script';
 
 import './globals.css';
@@ -17,7 +17,7 @@ const libreBaskerville = Libre_Baskerville({
   variable: '--site-display-font'
 });
 
-const inter = Inter({
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['400', '500', '700'],
   display: 'swap',
@@ -197,7 +197,7 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteSchema) }}
         />
       </head>
-      <body className={`${dmSans.variable} ${libreBaskerville.variable} ${inter.variable}`}>
+      <body className={`${dmSans.variable} ${libreBaskerville.variable} ${roboto.variable}`}>
         {children}
         <Script src="/script.js" strategy="afterInteractive" />
       </body>
