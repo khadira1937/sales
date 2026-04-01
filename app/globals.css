@@ -29,6 +29,7 @@
   --radius-sm: 14px;
   --font-display: var(--site-display-font), Georgia, serif;
   --font-body: var(--site-body-font), Arial, sans-serif;
+  --font-paragraph: var(--site-paragraph-font), 'Inter', Arial, sans-serif;
   --container-max: 1200px;
   --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -57,6 +58,10 @@ body {
     linear-gradient(180deg, #080808, var(--ink));
   line-height: 1.7;
   overflow-x: hidden;
+}
+
+p {
+  font-family: var(--font-paragraph);
 }
 
 img {
